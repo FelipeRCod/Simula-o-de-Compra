@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Compra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .product, .cart-item {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Loja Virtual</h1>
+    </header>
+<main>
+    <section>
+        <h2>Buscar Produto</h2>
+        <label for="search">Nome do Produto:</label>
+        <input type="text" id="search" placeholder="Digite o nome do produto">
+        <button onclick="buscarProduto()">Buscar</button>
+        <div id="search-result"></div>
+    </section>
+
+    <section>
+        <h2>Estoque de Produtos</h2>
+        <div id="estoque"></div>
+    </section>
+
+    <section>
+        <h2>Carrinho de Compras</h2>
+        <div id="carrinho"></div>
+        <h3>Total: R$ <span id="total">0.00</span></h3>
+        <button onclick="ordenarCarrinho()">Ordenar por Preço</button>
+    </section>
+
+    <script src="script.js"></script>
+</main>
+    
+
+</body>
+</html>
